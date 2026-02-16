@@ -8,21 +8,17 @@
 
 ## The Static Agent Problem
 
-Every AI team faces the same frustrating reality: **agents that never get better.**
+Every AI team faces the same frustrating reality: **slow iteration cycles.**
 
 You ship your agent, then manually babysit its performance forever. Observe metrics in dashboards. Run offline evals. Tweak prompts based on gut feelings. Deploy changes and pray they work.
 
 **The painful cycle:** Manual observation → Gut-feeling changes → Cross-your-fingers deployment → Repeat.
 
-Your agent had potential. It could be amazing. But it's frozen in time while your users' needs evolve, edge cases multiply, and competitors ship agents that learn and adapt.
-
-Meanwhile, you're burning engineering hours on maintenance instead of building new features.
-
 ---
 
 ## Why Manual Optimization Fails
 
-**Feedback loops are broken.** Weeks between problem identification and fix deployment. By then, the problem has multiplied.
+**Feedback loops are slow.** You want to make your AI better and you rely on offline Evals to validate this. This is both slow and inefficient.
 
 **Disconnected from business impact.** You optimize for eval metrics that don't correlate with revenue, retention, or user satisfaction.
 
@@ -31,6 +27,21 @@ Meanwhile, you're burning engineering hours on maintenance instead of building n
 **Risk paralysis.** Every change might break something, so you change less, improve slower, and fall further behind.
 
 **Human bottleneck.** Your best engineers spend their time tweaking prompts instead of building the next breakthrough.
+
+---
+
+## Introducing Asphalt
+
+Agents that learn on their own. Asphalt safely tests dozens of iterations each day, and picks only the ones that work. 
+
+**Connected to real business signals.** It plugs into your datalake to map conversion, retention, resolution rates, and revenue events. Optimization is grounded in what actually matters.
+
+**Protected by your eval stack.** Every mutation runs through your existing evals for non-regression testing, before exposure to users. No blind changes.
+
+**Continuous safe experimentation.** Prompts, tools, routing, models. Asphalt generates variations, tests them on controlled traffic, and promotes only measurable wins.
+
+**A compounding memory layer.** Every experiment, constraint, win, and failure is stored. Over time, your agent becomes uniquely tuned to your business.
+
 
 ---
 
